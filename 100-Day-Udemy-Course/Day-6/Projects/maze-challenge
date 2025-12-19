@@ -1,1 +1,50 @@
+#maze aka hurlde 5
 
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+#the jump function changed a lil bit here
+#useless here, the function isn't used a 
+#single it
+def jump():
+    turn_left()    
+    while wall_on_right():
+        move()
+
+    turn_right()
+    move()
+    turn_right()
+    
+    while front_is_clear():
+        move()
+    turn_left()
+#one edge case where he would get stuck in a single
+#tile that had no walls around him, so he would cirlce
+#around it like a vulture
+if right_is_clear() and front_is_clear and right_is_clear != True and front_is_clear != True:
+    move()
+turn_left()
+
+#if not at goal, find it then
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
+
+
+    #right_is_clear()
+    #wall_in_front()
+    #wall_on_right()
+    
+    
+# follow along the right edge of the maze,
+#turning right if it can, going straight ahead 
+#if it can’t turn right, or turning left
+#as a last resort.
+     
