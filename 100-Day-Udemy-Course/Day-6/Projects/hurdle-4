@@ -1,1 +1,30 @@
+#Hurdle 4, the walls instead are random sizes,
+#I liked this one very much
 
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+#the jump function changed a lil bit here
+def jump():
+    turn_left()    
+    while wall_on_right():
+        move()
+
+    turn_right()
+    move()
+    turn_right()
+    
+    while front_is_clear():
+        move()
+    turn_left()
+
+
+#if wall is infront
+while not at_goal():
+    while wall_in_front():
+        jump()
+    else:
+        move()
+       
