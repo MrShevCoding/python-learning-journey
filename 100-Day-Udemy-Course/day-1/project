@@ -1,0 +1,15 @@
+#Brand name generator project, pretty simple tbh, i have basic knowledge 
+#allready so this was pretty simple, below is the description
+
+#Description
+#Create a greeting for your program.
+#Ask the user for the city that they grew up in and store it in a variable.
+#Ask the user for the name of a pet and store it in a variable.
+#Combine the name of their city and pet and show them their band name.
+
+
+#Actual project
+question1 = input("What city do you grew up?")
+question2 = input("What's the name of your pet")
+
+print("Your band name should be" + question1 + " "+  question2)
