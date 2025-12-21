@@ -1,1 +1,34 @@
-#place holder currently, near 
+#Note, there was a libary too with this but i didn't use it so I wont include it
+#yes, this won't run actually cuz it's a browser type scripting, this is the first
+#lesson using Reeborg's world
+#https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Alone&url=worlds%2Ftutorial_en%2Falone.json
+
+def turn_around():
+    turn_left()
+    turn_left()
+
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+
+# testing him out, with these new knoweledge
+# move()
+# move()
+# turn_around()
+# move()
+# move()
+# turn_around()
+
+
+# making him draw a square using the turn right def
+turn_left()
+move()
+turn_right()
+move()
+turn_right()
+move()
+turn_right()
+move()
